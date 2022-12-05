@@ -1,0 +1,50 @@
+.message-menu {
+    background-color: #fff;
+    bottom: -24.15rem;
+    box-shadow: var(--shadow-dark);
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    transform: scale(0);
+    width: 20rem;
+    z-index: 15;
+
+    &:hover {
+        transform: scale(1);
+    }
+
+    & > *:not(:last-child) {
+        border-bottom: 1px solid var(--color-grey-light-3);
+        color: currentColor;
+        padding: 1.5rem 2rem;
+        text-decoration: none;
+    }
+
+    & > *:not(:last-child):hover {
+        background-color: var(--color-grey-light-2);
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__item-title {
+        font-weight: 600;
+    }
+
+    &__item-text {
+        font-size: 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    &__footer {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding-block: .5rem;
+    }
+}

@@ -1,0 +1,64 @@
+.review {
+    background-color: #fff;
+    box-shadow: var(--shadow-light);
+    margin-bottom: 3.5rem;
+    overflow: hidden;
+    padding: 3rem;
+    position: relative;
+
+    @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 3rem;
+        padding: 2rem;
+    }
+
+    &__text {
+        margin-bottom: 2rem;
+        position: relative;
+        z-index: 10;
+    }
+
+    &__user {
+        align-items: center;
+        display: flex;
+    }
+
+    &__photo {
+        border-radius: 50%;
+        height: 4.5rem;
+        width: 4.5rem;
+    }
+
+    &__user-box {
+        margin-inline: 1.5rem auto;
+    }
+
+    &__user-name {
+        font-size: 1.1rem;
+        font-weight: bold;
+        margin-bottom: .4rem;
+        text-transform: uppercase;
+    }
+
+    &__user-date {
+        color: var(--color-grey-dark-3);
+        font-size: 1rem;
+    }
+
+    &__rating {
+        color: var(--color-primary);
+        font-size: 2.2rem;
+        font-weight: 300;
+    }
+
+    &::before {
+        color: var(--color-grey-light-2);
+        content: "\201C";
+        font-family: sans-serif;
+        font-size: 20rem;
+        left: -1rem;
+        line-height: 1;
+        position: absolute;
+        top: -2.75rem;
+        z-index: 1;
+    }
+}

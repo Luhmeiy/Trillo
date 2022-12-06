@@ -17,5 +17,5 @@ It was designed by [Jonas Schmedtmann](https://www.udemy.com/user/jonasschmedtma
 ### Tablet
 ![tablet](./img/screenshots/tablet.png)
 
-### Mobile
+### Phone
 ![phone](./img/screenshots/phone.png)
